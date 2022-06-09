@@ -8,11 +8,11 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: demo_001
+featured-image: http://cdn.shopify.com/s/files/1/0092/5889/3370/articles/historic-churches-in-harlem-711053_1200x630.jpg?v=1602692177
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 12em # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
-home-banner-image-position: center # Default is top
+home-banner-image-position: top # Default is top
 
 ##########
 # ITEM PAGE
