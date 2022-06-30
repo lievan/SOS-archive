@@ -1,2 +1,9 @@
-objectid,title,display_template,object_location,image_small,image_thumb,format
-audio_001,pink panther,audio,/objects/pink_panther.mp3,/objects/small/pink_panther.jpeg,/objects/thumbs/pink_panther.jpeg,audio/mp3
+objectid,title,date,subject,description,location,display_template,object_location,image_small,image_thumb,format
+audio_001,Loc1,,health;love;church,blahblahblahblahblahblah,loc1,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_002,Loc2,,religion;love,blahblahblahblahblahblah,loc2,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_002,Loc2,,religion;love,blahblahblahblahblahblah,loc2,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_003,Loc3,,love;religion,blahblahblahblahblahblah,loc3,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_003,Loc3,,love;religion,blahblahblahblahblahblah,loc3,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_003,Loc3,,love;religion,blahblahblahblahblahblah,loc3,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+audio_003,Loc3,,love;religion,blahblahblahblahblahblah,loc3,audio,/objects/pink_panther.mp3,,https://patch.com/img/cdn20/users/22866740/20191203/110820/styles/patch_image/public/harlem-church___03110753872.jpg,audio/mp3
+soundartvid,,,,,,,/objects/dunes.mp4,,,video/mp4

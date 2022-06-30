@@ -1,0 +1,65 @@
+---
+# collection "Browse" page
+layout: page
+custom-foot: js/soundart-js.html
+---
+
+{{ content }}
+
+
+<style>
+.savid{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.buttons{
+    text-align: center;
+    padding: 10px;
+}
+.artbut {
+    margin-left: 15px;
+    display: inline-block
+}
+.artbut:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+.artbut:target{
+  box-shadow: 0 0 2px darkslategray;
+}
+</style>
+
+<div class="buttons">
+  <div class="artbut">{% include feature/button.html text="Grace" color="primary"  onclick="changeVideo1()"%}</div>
+  <div class="artbut">{% include feature/button.html text="Love" color="primary" onclick="changeVideo2()"%}</div>
+  <div class="artbut">{% include feature/button.html text="????" color="primary" onclick="changeVideo3()" %}</div>
+</div>
+
+<div id="vid1">
+{% include feature/video.html objectid="soundartvid" width="75" %}
+</div>
+
+
+<audio id="a1" src="http://soundfxcenter.com/music/television-theme-songs/8d82b5_Pink_Panther_Ending_Theme_Song.mp3"></audio>
+<audio id="a2" src="http://soundfxcenter.com/music/television-theme-songs/8d82b5_Pink_Panther_Ending_Theme_Song.mp3"></audio>
+<audio id="a3" src="http://soundfxcenter.com/music/television-theme-songs/8d82b5_Pink_Panther_Ending_Theme_Song.mp3"></audio>
+
+
+<script>
+  var vid = document.getElementsByTagName('video').item(0)
+  // vids is an HTMLCollection
+ 
+ function changeVideo1() { 
+    vid.getElementsByTagName('source')[0].src = '/objects/dunes.mp4';
+    vid.load();
+ }
+ function changeVideo2() { 
+    vid.getElementsByTagName('source')[0].src = '/objects/road.mp4';
+    vid.load();
+ }
+ function changeVideo3() { 
+    vid.getElementsByTagName('source')[0].src = '/objects/earth.mp4';
+    vid.load();
+ }
+</script>
