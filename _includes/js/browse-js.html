@@ -5,11 +5,15 @@
 /* add items */
 var items = [
     {% for i in items %}
+    {% if i.title %}
     { {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }}, {%- endif -%}{%- endfor -%}
         {% if i.image_thumb %}"img": {{ i.image_thumb | relative_url | jsonify }}, {%- endif -%} 
         {% if i.display_template %}"template": {{ i.display_template | jsonify }}, {%- endif -%}
         {% if i.format %}"format": {{ i.format | jsonify }}, {%- endif -%}
-        "title":{{ i.title | strip | escape | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{%- endfor -%}
+        "title":{{ i.title | strip | escape | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}    
+    {%- endif -%}
+    {%- endfor -%}
+
 ];
 
 {% include js/get-icon.js %}
